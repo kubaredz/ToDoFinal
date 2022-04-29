@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?actionBarSize"
+        android:theme="?actionBarTheme"
+        android:background="@color/dark_blue">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Life manager"
+            android:textSize="28sp"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:layout_gravity="left">
+        </TextView>
+
+        <Button
+            android:onClick="newTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:layout_gravity="end"
+            android:textColor="@color/green">
+        </Button>
+    </androidx.appcompat.widget.Toolbar>
+    <ListView
+        android:id="@+id/taskListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="3dp"
+        android:divider="@color/dark_blue"
+        android:layout_marginTop="3dp">
+    </ListView>
+</LinearLayout>
